@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Day Rift</title>
+    <meta name="description" content="Day Rift Privacy Policy - Learn how we collect, use, and protect your personal information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #374151;
+            background: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        .header {
+            background: #0f172a;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+            padding: 80px 24px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .hero .subtitle {
+            font-size: 18px;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 8px 16px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 100px;
+            font-size: 13px;
+            color: #a5b4fc;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        .section {
+            margin-bottom: 48px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            margin: 24px 0 12px 0;
+        }
+
+        .section p {
+            margin-bottom: 16px;
+            color: #4b5563;
+        }
+
+        .section ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+            color: #4b5563;
+        }
+
+        .section li strong {
+            color: #1f2937;
+        }
+
+        .highlight-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .highlight-box.important {
+            background: #fef3c7;
+            border-color: #fcd34d;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #374151;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 48px;
+        }
+
+        .toc h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        .toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+            column-gap: 32px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #4b5563;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: #6366f1;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f172a;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        .footer-copy {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .toc ol {
+                columns: 1;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Day Rift</span>
+            </a>
+            <nav class="nav-links">
+                <a href="privacy-policy.html" class="active">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Your privacy matters to us. This policy explains how Day Rift collects, uses, and protects your personal information.</p>
+        <span class="last-updated">Last Updated: December 9, 2024</span>
+    </section>
+
+    <main class="main-content">
+        <nav class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#information-collect">1. Information We Collect</a></li>
+                <li><a href="#how-we-use">2. How We Use Your Information</a></li>
+                <li><a href="#information-sharing">3. Information Sharing</a></li>
+                <li><a href="#data-security">4. Data Security</a></li>
+                <li><a href="#data-retention">5. Data Retention</a></li>
+                <li><a href="#your-rights">6. Your Rights</a></li>
+                <li><a href="#children">7. Children's Privacy</a></li>
+                <li><a href="#advertising">8. Advertising</a></li>
+                <li><a href="#third-party">9. Third-Party Links</a></li>
+                <li><a href="#international">10. International Transfers</a></li>
+                <li><a href="#changes">11. Policy Changes</a></li>
+                <li><a href="#contact">12. Contact Us</a></li>
+            </ol>
+        </nav>
+
+        <div class="highlight-box">
+            <p>Day Rift ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+        </div>
+
+        <section class="section" id="information-collect">
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Personal Information</h3>
+            <p>We collect personal information that you voluntarily provide when using the App:</p>
+            <ul>
+                <li><strong>Account Information:</strong> Name, email address, phone number, and password when you create an account</li>
+                <li><strong>Profile Information:</strong> Profile picture, preferences, and settings you choose to provide</li>
+                <li><strong>Authentication Data:</strong> Information from third-party authentication services (Google, Apple) if you choose to sign in using these methods</li>
+            </ul>
+
+            <h3>1.2 Usage Data</h3>
+            <p>We automatically collect certain information when you use the App:</p>
+            <ul>
+                <li><strong>Habit Data:</strong> Information about habits you create, track, and complete</li>
+                <li><strong>Workout Data:</strong> Exercise logs, workout sessions, sets, reps, and related fitness information</li>
+                <li><strong>Focus Session Data:</strong> Duration and frequency of focus sessions</li>
+                <li><strong>Quest/Goal Data:</strong> Goals you set and your progress toward them</li>
+                <li><strong>Achievement Data:</strong> XP earned, achievements unlocked, and streak information</li>
+            </ul>
+
+            <h3>1.3 Location Data</h3>
+            <p>With your explicit permission, we may collect location data to provide features such as:</p>
+            <ul>
+                <li>GPS tracking for outdoor workouts (walking, running)</li>
+                <li>Route mapping and distance calculation</li>
+            </ul>
+            <p>You can disable location access at any time through your device settings.</p>
+
+            <h3>1.4 Device Information</h3>
+            <p>We may collect device information including:</p>
+            <ul>
+                <li>Device type and model</li>
+                <li>Operating system version</li>
+                <li>Unique device identifiers</li>
+                <li>Push notification tokens</li>
+            </ul>
+        </section>
+
+        <section class="section" id="how-we-use">
+            <h2>2. How We Use Your Information</h2>
+            <p>We use the collected information to:</p>
+            <ul>
+                <li>Provide, maintain, and improve the App</li>
+                <li>Create and manage your account</li>
+                <li>Track your habits, workouts, and goals</li>
+                <li>Provide AI-powered coaching and personalized recommendations</li>
+                <li>Send push notifications and reminders (with your consent)</li>
+                <li>Analyze usage patterns to improve our services</li>
+                <li>Process subscription payments through our payment provider</li>
+                <li>Respond to your inquiries and provide customer support</li>
+                <li>Comply with legal obligations</li>
+            </ul>
+        </section>
+
+        <section class="section" id="information-sharing">
+            <h2>3. Information Sharing and Disclosure</h2>
+
+            <div class="highlight-box important">
+                <p><strong>We do not sell your personal information.</strong></p>
+            </div>
+
+            <p>We may share your information in the following circumstances:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> We work with third-party service providers who assist us in operating the App, including:
+                    <ul>
+                        <li>RevenueCat (subscription management)</li>
+                        <li>Google and Apple (authentication services)</li>
+                        <li>Cloud hosting providers</li>
+                        <li>Analytics services</li>
+                    </ul>
+                </li>
+                <li><strong>Legal Requirements:</strong> We may disclose information if required by law or in response to valid legal requests</li>
+                <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred</li>
+            </ul>
+        </section>
+
+        <section class="section" id="data-security">
+            <h2>4. Data Security</h2>
+            <p>We implement appropriate technical and organizational measures to protect your personal information, including:</p>
+            <ul>
+                <li>Encryption of data in transit and at rest</li>
+                <li>Secure authentication mechanisms</li>
+                <li>Regular security assessments</li>
+                <li>Access controls and monitoring</li>
+            </ul>
+            <p>However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
+        </section>
+
+        <section class="section" id="data-retention">
+            <h2>5. Data Retention</h2>
+            <p>We retain your personal information for as long as your account is active or as needed to provide you services. You may request deletion of your account and associated data at any time by contacting us.</p>
+        </section>
+
+        <section class="section" id="your-rights">
+            <h2>6. Your Rights and Choices</h2>
+            <p>Depending on your location, you may have the following rights:</p>
+            <ul>
+                <li><strong>Access:</strong> Request access to your personal information</li>
+                <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+                <li><strong>Deletion:</strong> Request deletion of your data</li>
+                <li><strong>Export:</strong> Request a copy of your data in a portable format</li>
+                <li><strong>Opt-out:</strong> Opt out of marketing communications</li>
+            </ul>
+            <p>To exercise these rights, contact us at the email address provided below.</p>
+        </section>
+
+        <section class="section" id="children">
+            <h2>7. Children's Privacy</h2>
+            <p>The App is intended for users of all ages. We do not knowingly collect personal information from children under 13 without parental consent. If you believe we have collected information from a child under 13, please contact us immediately.</p>
+        </section>
+
+        <section class="section" id="advertising">
+            <h2>8. Advertising</h2>
+            <p>The free version of Day Rift may display advertisements. We may use advertising partners who collect device information to serve relevant ads. Premium subscribers enjoy an ad-free experience.</p>
+        </section>
+
+        <section class="section" id="third-party">
+            <h2>9. Third-Party Links</h2>
+            <p>The App may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies.</p>
+        </section>
+
+        <section class="section" id="international">
+            <h2>10. International Data Transfers</h2>
+            <p>Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place for such transfers in accordance with applicable data protection laws.</p>
+        </section>
+
+        <section class="section" id="changes">
+            <h2>11. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. We encourage you to review this Privacy Policy periodically.</p>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>12. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or our privacy practices, please contact us at:</p>
+            <div class="highlight-box">
+                <p><strong>Email:</strong> support@dayrift.com</p>
+                <p><strong>App:</strong> Day Rift</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+            <p class="footer-copy">&copy; 2024 Day Rift. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

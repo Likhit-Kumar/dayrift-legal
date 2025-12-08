@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Day Rift</title>
+    <meta name="description" content="Day Rift Terms of Service - Read our terms and conditions for using the Day Rift application.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #374151;
+            background: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        .header {
+            background: #0f172a;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+            padding: 80px 24px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .hero .subtitle {
+            font-size: 18px;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 8px 16px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 100px;
+            font-size: 13px;
+            color: #a5b4fc;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        .section {
+            margin-bottom: 48px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            margin: 24px 0 12px 0;
+        }
+
+        .section p {
+            margin-bottom: 16px;
+            color: #4b5563;
+        }
+
+        .section ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+            color: #4b5563;
+        }
+
+        .section li strong {
+            color: #1f2937;
+        }
+
+        .highlight-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .highlight-box.important {
+            background: #fef3c7;
+            border-color: #fcd34d;
+        }
+
+        .highlight-box.warning {
+            background: #fef2f2;
+            border-color: #fecaca;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #374151;
+        }
+
+        .highlight-box p + p {
+            margin-top: 12px;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 48px;
+        }
+
+        .toc h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        .toc ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+            column-gap: 32px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #4b5563;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: #6366f1;
+        }
+
+        /* Legal text styling */
+        .legal-caps {
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f172a;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        .footer-copy {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .toc ol {
+                columns: 1;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Day Rift</span>
+            </a>
+            <nav class="nav-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html" class="active">Terms of Service</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Terms of Service</h1>
+        <p class="subtitle">Please read these terms carefully before using Day Rift. By using our app, you agree to be bound by these terms.</p>
+        <span class="last-updated">Last Updated: December 9, 2024</span>
+    </section>
+
+    <main class="main-content">
+        <nav class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                <li><a href="#description">2. Description of Service</a></li>
+                <li><a href="#accounts">3. User Accounts</a></li>
+                <li><a href="#subscriptions">4. Subscriptions & Payments</a></li>
+                <li><a href="#user-content">5. User Content</a></li>
+                <li><a href="#acceptable-use">6. Acceptable Use</a></li>
+                <li><a href="#health-disclaimer">7. Health & Fitness Disclaimer</a></li>
+                <li><a href="#intellectual-property">8. Intellectual Property</a></li>
+                <li><a href="#privacy">9. Privacy</a></li>
+                <li><a href="#termination">10. Termination</a></li>
+                <li><a href="#disclaimers">11. Disclaimers</a></li>
+                <li><a href="#limitation">12. Limitation of Liability</a></li>
+                <li><a href="#indemnification">13. Indemnification</a></li>
+                <li><a href="#changes">14. Changes to Terms</a></li>
+                <li><a href="#governing-law">15. Governing Law</a></li>
+                <li><a href="#contact">16. Contact Us</a></li>
+            </ol>
+        </nav>
+
+        <div class="highlight-box">
+            <p>Welcome to Day Rift. By downloading, installing, or using our mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+        </div>
+
+        <section class="section" id="acceptance">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using Day Rift, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you are using the App on behalf of an organization, you represent that you have the authority to bind that organization to these Terms.</p>
+        </section>
+
+        <section class="section" id="description">
+            <h2>2. Description of Service</h2>
+            <p>Day Rift is a productivity and fitness application that provides:</p>
+            <ul>
+                <li>Habit tracking and management</li>
+                <li>Workout and exercise logging</li>
+                <li>Focus session timers and digital detox features</li>
+                <li>Goal setting and quest management</li>
+                <li>AI-powered coaching and recommendations</li>
+                <li>Achievement and reward systems</li>
+                <li>Analytics and progress tracking</li>
+            </ul>
+        </section>
+
+        <section class="section" id="accounts">
+            <h2>3. User Accounts</h2>
+            <p>To use certain features of the App, you must create an account. You agree to:</p>
+            <ul>
+                <li>Provide accurate, current, and complete registration information</li>
+                <li>Maintain and promptly update your account information</li>
+                <li>Maintain the security and confidentiality of your login credentials</li>
+                <li>Notify us immediately of any unauthorized access to your account</li>
+                <li>Accept responsibility for all activities that occur under your account</li>
+            </ul>
+            <p>We reserve the right to suspend or terminate accounts that violate these Terms or contain false information.</p>
+        </section>
+
+        <section class="section" id="subscriptions">
+            <h2>4. Subscriptions and Payments</h2>
+
+            <h3>4.1 Free and Premium Tiers</h3>
+            <p>Day Rift offers both free and premium subscription options. Premium features require a paid subscription and include advanced AI coaching, detailed analytics, and an ad-free experience.</p>
+
+            <h3>4.2 Billing</h3>
+            <p>Subscriptions are billed through the Google Play Store or Apple App Store. By subscribing, you agree to their respective terms, billing practices, and payment processing.</p>
+
+            <h3>4.3 Automatic Renewal</h3>
+            <p>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period.</p>
+
+            <h3>4.4 Cancellation</h3>
+            <p>You may cancel your subscription at any time through your device's app store settings. Cancellation takes effect at the end of the current billing period. No refunds are provided for partial billing periods.</p>
+
+            <h3>4.5 Refunds</h3>
+            <p>Refund requests are handled according to the policies of Google Play Store or Apple App Store. Please contact the respective store for refund inquiries.</p>
+        </section>
+
+        <section class="section" id="user-content">
+            <h2>5. User Content</h2>
+            <p>You retain ownership of any content you create within the App, including habits, goals, notes, and personal data. By using the App, you grant us a limited, non-exclusive license to store, process, and display this content solely to provide and improve our services.</p>
+            <p>You are solely responsible for your content and represent that you have all necessary rights to submit such content.</p>
+        </section>
+
+        <section class="section" id="acceptable-use">
+            <h2>6. Acceptable Use</h2>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Use the App for any illegal or unauthorized purpose</li>
+                <li>Attempt to gain unauthorized access to our systems or networks</li>
+                <li>Interfere with or disrupt the App's functionality or servers</li>
+                <li>Reverse engineer, decompile, or disassemble the App</li>
+                <li>Use automated systems or software to extract data from the App</li>
+                <li>Transmit any harmful, threatening, or malicious content</li>
+                <li>Impersonate any person or entity</li>
+                <li>Violate any applicable local, state, national, or international law</li>
+            </ul>
+        </section>
+
+        <section class="section" id="health-disclaimer">
+            <h2>7. Health and Fitness Disclaimer</h2>
+
+            <div class="highlight-box warning">
+                <p><strong>Important:</strong> Day Rift is not a medical device and does not provide medical advice. The App's workout tracking, habit suggestions, and AI coaching are for informational and motivational purposes only.</p>
+            </div>
+
+            <ul>
+                <li>Always consult a qualified healthcare professional before starting any exercise program or making changes to your diet or lifestyle</li>
+                <li>Do not rely on the App for medical decisions or diagnosis</li>
+                <li>We are not responsible for any injuries, health issues, or damages resulting from exercises or activities tracked in the App</li>
+                <li>If you experience any pain, discomfort, or health concerns during exercise, stop immediately and seek medical attention</li>
+            </ul>
+        </section>
+
+        <section class="section" id="intellectual-property">
+            <h2>8. Intellectual Property</h2>
+            <p>All content, features, functionality, design, graphics, and software of the App are owned by Day Rift and are protected by copyright, trademark, patent, trade secret, and other intellectual property laws.</p>
+            <p>You may not copy, modify, distribute, sell, lease, or create derivative works based on the App or its content without our prior written permission.</p>
+        </section>
+
+        <section class="section" id="privacy">
+            <h2>9. Privacy</h2>
+            <p>Your use of the App is also governed by our <a href="privacy-policy.html">Privacy Policy</a>, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand how we collect, use, and protect your information.</p>
+        </section>
+
+        <section class="section" id="termination">
+            <h2>10. Termination</h2>
+            <p>We may suspend or terminate your access to the App at any time, with or without cause, and with or without notice, for conduct that we believe:</p>
+            <ul>
+                <li>Violates these Terms</li>
+                <li>Is harmful to other users, us, or third parties</li>
+                <li>Is fraudulent or illegal</li>
+            </ul>
+            <p>Upon termination, your right to use the App will immediately cease. Provisions that by their nature should survive termination will survive.</p>
+        </section>
+
+        <section class="section" id="disclaimers">
+            <h2>11. Disclaimer of Warranties</h2>
+            <div class="highlight-box">
+                <p class="legal-caps">THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</p>
+                <p class="legal-caps">WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE APP IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</p>
+            </div>
+        </section>
+
+        <section class="section" id="limitation">
+            <h2>12. Limitation of Liability</h2>
+            <div class="highlight-box">
+                <p class="legal-caps">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL DAY RIFT, ITS OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, RESULTING FROM YOUR USE OR INABILITY TO USE THE APP.</p>
+            </div>
+        </section>
+
+        <section class="section" id="indemnification">
+            <h2>13. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless Day Rift and its officers, directors, employees, contractors, agents, licensors, and suppliers from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the App.</p>
+        </section>
+
+        <section class="section" id="changes">
+            <h2>14. Changes to Terms</h2>
+            <p>We reserve the right to modify these Terms at any time at our sole discretion. If we make material changes, we will notify you by posting the updated Terms in the App or through other communications. Your continued use of the App after such modifications constitutes your acceptance of the updated Terms.</p>
+        </section>
+
+        <section class="section" id="governing-law">
+            <h2>15. Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in India.</p>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>16. Contact Us</h2>
+            <p>If you have any questions about these Terms of Service, please contact us:</p>
+            <div class="highlight-box">
+                <p><strong>Email:</strong> support@dayrift.com</p>
+                <p><strong>App:</strong> Day Rift</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+            <p class="footer-copy">&copy; 2024 Day Rift. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
