@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Dayrift — AI Daily Planner &amp; Habit Tracker for Android</title>
+<meta name="description" content="Dayrift is an AI daily planner and habit tracker that schedules your day for you. Add a task in plain language and Dayrift finds the time — around your calendar, your habits and the hours you actually get things done.">
+<link rel="canonical" href="https://likhit-kumar.github.io/dayrift-legal/">
+<meta name="theme-color" content="#0B0B0D">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dayrift">
+<meta property="og:title" content="Dayrift — AI Daily Planner &amp; Habit Tracker">
+<meta property="og:description" content="An AI daily planner that turns your tasks and habits into a schedule that fits your actual day.">
+<meta property="og:url" content="https://likhit-kumar.github.io/dayrift-legal/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dayrift — AI Daily Planner &amp; Habit Tracker">
+<meta name="twitter:description" content="An AI daily planner that turns your tasks and habits into a schedule that fits your actual day.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Dayrift",
+  "alternateName": "Dayrift: AI Planner & Habits",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Android",
+  "description": "An AI daily planner and habit tracker that schedules your day for you.",
+  "url": "https://likhit-kumar.github.io/dayrift-legal/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.dayrift.app",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free to download. Dayrift Premium unlocks unlimited tasks, habits and AI planning."
+  }
+}
+</script>
+
+<style>
+  :root{
+    --bg:#0B0B0D; --surface:#141417; --line:#232329;
+    --text:#F2F2F4; --muted:#9A9AA4; --gold:#D8A852; --purple:#9B87F5;
+    --radius:14px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text); font-family:var(--font);
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{width:100%; max-width:1080px; margin:0 auto; padding:0 24px}
+  a{color:inherit}
+
+  header{
+    position:sticky; top:0; z-index:10; backdrop-filter:blur(12px);
+    background:rgba(11,11,13,.82); border-bottom:1px solid var(--line);
+  }
+  .bar{display:flex; align-items:center; justify-content:space-between; height:64px}
+  .mark{font-size:19px; font-weight:650; letter-spacing:-.02em; text-decoration:none}
+  .mark i{font-style:normal; color:var(--gold)}
+
+  .btn{
+    display:inline-block; padding:11px 20px; border-radius:999px; font-weight:600;
+    font-size:15px; text-decoration:none; transition:opacity .15s ease;
+  }
+  .btn:hover{opacity:.85}
+  .btn-primary{background:var(--text); color:#0B0B0D}
+  .btn-ghost{border:1px solid var(--line); color:var(--text)}
+
+  .hero{padding:96px 0 80px; text-align:center}
+  h1{
+    font-size:clamp(38px,6.4vw,64px); line-height:1.05; letter-spacing:-.035em;
+    font-weight:680; margin:0 0 22px;
+  }
+  h1 em{font-style:normal; color:var(--gold)}
+  .lede{
+    font-size:clamp(17px,2.1vw,20px); color:var(--muted);
+    max-width:620px; margin:0 auto 34px;
+  }
+  .cta-row{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+  .note{margin-top:18px; font-size:14px; color:var(--muted)}
+
+  section{padding:72px 0; border-top:1px solid var(--line)}
+  h2{
+    font-size:clamp(26px,3.6vw,36px); letter-spacing:-.028em; font-weight:650;
+    margin:0 0 14px; line-height:1.15;
+  }
+  .sub{color:var(--muted); max-width:620px; margin:0 0 44px; font-size:17px}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(268px,1fr)); gap:18px}
+  .card{
+    background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--radius); padding:26px;
+  }
+  .card h3{margin:0 0 9px; font-size:17px; font-weight:620; letter-spacing:-.012em}
+  .card p{margin:0; color:var(--muted); font-size:15px}
+  .card .tag{
+    display:inline-block; font-size:12px; letter-spacing:.09em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:13px; font-weight:600;
+  }
+  .card.accent .tag{color:var(--purple)}
+
+  .pricing{display:grid; grid-template-columns:repeat(auto-fit,minmax(268px,1fr)); gap:18px; max-width:720px}
+  .price{font-size:30px; font-weight:660; letter-spacing:-.03em; margin:0 0 4px}
+  .price small{font-size:14px; color:var(--muted); font-weight:400; letter-spacing:0}
+  ul.ticks{list-style:none; padding:0; margin:18px 0 0}
+  ul.ticks li{padding-left:24px; position:relative; margin-bottom:9px; color:var(--muted); font-size:15px}
+  ul.ticks li::before{content:"✓"; position:absolute; left:0; color:var(--gold)}
+
+  details{border-top:1px solid var(--line); padding:18px 0}
+  details:last-of-type{border-bottom:1px solid var(--line)}
+  summary{cursor:pointer; font-weight:600; font-size:16px; list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+"; float:right; color:var(--muted); font-weight:400}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted); margin:12px 0 0; font-size:15px; max-width:640px}
+
+  footer{border-top:1px solid var(--line); padding:44px 0; color:var(--muted); font-size:14px}
+  .foot{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap}
+  .foot nav a{margin-left:20px; text-decoration:none; color:var(--muted)}
+  .foot nav a:first-child{margin-left:0}
+  .foot nav a:hover{color:var(--text)}
+  @media(max-width:560px){
+    .foot{flex-direction:column}
+    .foot nav a{margin:0 18px 0 0}
+    .hero{padding:64px 0 56px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="/">Day<i>rift</i></a>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.dayrift.app">Get it on Google Play</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1>Your day, <em>planned for you</em>.</h1>
+    <p class="lede">
+      Dayrift is an AI daily planner and habit tracker that turns your tasks into a
+      schedule that fits your actual day. Add what you need to do — Dayrift finds the time.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.dayrift.app">Download for Android</a>
+      <a class="btn btn-ghost" href="#how">See how it works</a>
+    </div>
+    <p class="note">Free to download · No account needed to look around</p>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>Most planners hand you an empty box</h2>
+      <p class="sub">
+        Then they expect you to fill it, and make you feel behind when you don't.
+        Dayrift does the scheduling, adapts when life gets in the way, and never
+        keeps score against you.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="tag">Auto-scheduling</span>
+          <h3>Say it plainly, get it scheduled</h3>
+          <p>“Call mom at 3pm tomorrow.” Dayrift places it around your calendar, your habits, and the hours you actually get things done.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Forgiving</span>
+          <h3>A habit tracker that doesn't punish</h3>
+          <p>Miss a day and Dayrift reschedules instead of resetting you to zero. Streaks you can keep without dreading them.</p>
+        </div>
+        <div class="card accent">
+          <span class="tag">Hailey</span>
+          <h3>An AI companion that remembers</h3>
+          <p>Chat, plan, and pick up where you left off. Hailey briefs you each morning and checks in when it matters — quietly, and only if you want her there.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Timeline</span>
+          <h3>One calm view of the day</h3>
+          <p>Tasks, habits and calendar events together, instead of switching between four apps to find out what's next.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Missions</span>
+          <h3>Goals that actually move</h3>
+          <p>Group tasks into something you're working towards and watch progress build in your timeline rather than in a spreadsheet.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Focus</span>
+          <h3>Time that counts itself</h3>
+          <p>Start a timer on any task, track deep work, and see where your hours really went at the end of the week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Pricing</h2>
+      <p class="sub">Start free. Upgrade only if the free tier stops being enough.</p>
+
+      <div class="pricing">
+        <div class="card">
+          <p class="price">Free</p>
+          <p style="color:var(--muted);margin:0;font-size:15px">Everything you need to try it properly</p>
+          <ul class="ticks">
+            <li>Up to 50 tasks and 5 habits</li>
+            <li>AI scheduling and daily plan</li>
+            <li>Focus sessions and streaks</li>
+            <li>Delete something, get the slot back</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="price">Premium <small>· monthly or yearly</small></p>
+          <p style="color:var(--muted);margin:0;font-size:15px">Priced in your local currency on Google Play</p>
+          <ul class="ticks">
+            <li>Unlimited tasks and habits</li>
+            <li>Unlimited AI companion</li>
+            <li>Unlimited focus sessions</li>
+            <li>Streak shields</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Questions</h2>
+      <div style="max-width:720px">
+        <details>
+          <summary>Is Dayrift free?</summary>
+          <p>Yes. The free tier covers 50 tasks, 5 habits, AI scheduling, focus sessions and streaks. Premium removes the limits. Deleting a task or habit frees the slot back up.</p>
+        </details>
+        <details>
+          <summary>Is it available on iPhone?</summary>
+          <p>Not yet. Dayrift is Android only for now.</p>
+        </details>
+        <details>
+          <summary>What does the AI actually do?</summary>
+          <p>It reads your calendar, your habits and when you've historically got things done, then places unscheduled tasks into slots that fit. If you miss something, it moves it rather than marking it failed.</p>
+        </details>
+        <details>
+          <summary>Do I have to use the AI companion?</summary>
+          <p>No. Hailey is off by default and lives entirely in Settings. Dayrift works as a planner and habit tracker without her.</p>
+        </details>
+        <details>
+          <summary>Can I delete my data?</summary>
+          <p>Yes, at any time, from inside the app or via the account deletion page linked below.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section style="text-align:center">
+    <div class="wrap">
+      <h2 style="margin-bottom:20px">Stop planning your day. Start having it.</h2>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.dayrift.app">Get Dayrift on Google Play</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Dayrift</span>
+    <nav>
+      <a href="./privacy-policy.html">Privacy</a>
+      <a href="./terms-of-service.html">Terms</a>
+      <a href="./delete-account.html">Delete account</a>
+      <a href="https://play.google.com/store/apps/details?id=com.dayrift.app">Google Play</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
